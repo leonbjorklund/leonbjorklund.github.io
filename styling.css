@@ -1,4 +1,44 @@
+body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    background-color: #323647;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+#header-canvas {
+    display: flex;
+    height: 75px;
+    /* background-color: #282A39; */
+}
+
+#name-logo {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2rem;
+    align-self: center;
+    margin-left: 3rem;
+}
+
+#main-canvas {
+    margin-left: 3rem;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.hello {
+    font-size: 1.8rem;
+}
+
+.me {
+    font-size: 4rem;
 }
