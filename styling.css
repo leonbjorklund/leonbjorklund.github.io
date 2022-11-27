@@ -1,9 +1,8 @@
 body {
     min-height: 100vh;
     min-height: -webkit-fill-available;
-
+    font-family: 'Poppins', sans-serif;
     color: white;
-    font-family: 'Lato', sans-serif;
 }
 
 html {
@@ -13,45 +12,50 @@ html {
 * {
     margin: 0;
     padding: 0;
+    color: white;
 }
 
-header {
-    display: none;
-}
-
-#landing-background {
-    /* background-image: linear-gradient(#323647, #2C3A47); */
-    background-image: url(background-image.jpg);
-    background-size: cover;
-
-    height: 100vh;
-    min-height: 100vh;
-}
-
-.vertical-center {
-    height: 100vh;
-    min-height: 100vh;
-    text-shadow: 2px 2px 4px #000;
-    display: flex;
+.nav-container {
+    height: 100%;
+    gap: 10px;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
 
-.container-fluid {
-  text-align: center;
+.container {
+    font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-    font-size: 14vmin!important;
+.nav-header {
+    height: 75px;
+    background-color: #171E31;
+    border-bottom: 5px solid orange;
 }
 
-.center {
-    color: #fff;
+.nav-header > .container {
+    height: 100%;
+}
+
+.name-logo {
     text-shadow: 2px 2px 4px #000;
-    text-transform: uppercase;
+    margin-right: auto;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.2rem;
+}
+
+.margin-top-bot-4rem {
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+
+}
+
+.first {
+    row-gap: 2rem;
 }
 
 #main-canvas {
     background-color: #171E31;
+    height: 100vh;
 }
 
 #name-logo {
@@ -63,15 +67,10 @@ h1 {
 
 #main-canvas {
     color: white;
-
+    height: 100vh;
 }
 
-#flex-one {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0 2rem 2rem 2rem;
-    justify-content: space-evenly;
+#main-canvas > .d-flex {
     padding-top: 2rem;
 }
 
@@ -80,27 +79,72 @@ h1 {
 }
 
 .me {
-    font-size: 3rem;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 img {
-    display: none;
-    height: 250px;  /* width: 337px, height: 393px, ratio: 393/337 **/
-    width: calc(250px*(337/393));
-    border-radius: 5px;
+    height: 275px;  /* width: 337px, height: 393px, ratio: 393/337 **/
+    width: calc(275*(337/393));
+    border-radius: 100px;
+    padding-right: 15px;
 }
 
-#icons {
-    margin: 15rem 4rem 7rem 4rem;
-    display: flex;
-    justify-content: space-around;
+.divider {
+    border-bottom: 5px solid orange;
+}
+
+.margin-top-12rem {
+    height: 100%;
+    margin-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 #project-page, #resume-page, #contact-page {
     display: none;
+    height: 100vh;
 }
 
-#project-header {
+.icon {
     text-align: center;
-    font-size: 3rem;
 }
+
+.icon-text {
+    font-size: 1.5rem;
+}
+
+.gap {
+    gap: 20px;
+}
+
+.circle {
+    border: 5px solid;
+    border-radius: 999px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.row > .fa-bars {
+    display: none;
+}
+
+
+@media (min-width: 726px) {
+
+    .first {
+        flex-wrap: nowrap!important;
+    }
+  }
+
+  @media (max-width: 726px) {
+
+    .nav-item {
+        display: none;
+    }
+
+    .row > .fa-bars {
+        display: block;
+    }
+
+  }
+  
