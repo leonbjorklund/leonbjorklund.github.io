@@ -10,15 +10,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@700&family=Poppins:wght@500&family=Staatliches&display=swap" rel="stylesheet"><body>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@700&family=Poppins:wght@500&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
 <header>
     <div class="nav-header">
 
         <div class="container">
             <div class="row justify-content-end nav-container">
                 <div class="name-logo">Leon Björklund</div>
-                <div class="nav-item">Home</div>
+                <a href="index.html"><div class="nav-item">Home</div></a>
                 <div class="nav-item">Projects</div>
                 <div class="nav-item">Experience</div>
                 <div class="nav-item">About Me</div>
@@ -37,7 +40,10 @@
     <div class="intro-canvas">
         <div class="container margin-top-bot-4rem">
             <div class="row justify-content-between first">
-                <div class="col-8 me mx-auto my-auto">Hey, I'm Leon. I'm a Front End Developer student with a passion for web-design.</div>
+                <div class="col">
+                <div class="col-10 me my-auto">Hey, I'm Leon. I'm a Front End Developer student with a passion for web-design.</div>
+                <div class="col-10 my-auto">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</div>
+                </div>
                 <img class="cv-pic mx-auto my-auto" src="CV-pic.jpg" alt="me"></img>
             </div>
         </div>
@@ -48,18 +54,18 @@
 
     <div class="container margin-top-12rem">
         <div class="row justify-content-around gap">
-            <div class="flex-column circle projects-button">
+            <a href="projects.html"><div class="flex-column circle projects-button">
                 <div class="icon-text-pro">Projects</div>
                 <div class="icon"><i class="fa-solid fa-code fa-2xl"></i></div>
-            </div>
-            <div class="flex-column circle resume-button">
+            </div></a>
+            <a><div class="flex-column circle resume-button">
                 <div class="icon-text-res">Resume</div>
                 <div class="icon"><i class="fa-solid fa-code fa-2xl"></i></div>
-            </div>
-            <div class="flex-column circle contact-button">
+            </div></a>
+            <a><div class="flex-column circle contact-button">
                 <div class="icon-text">Contact</div>
                 <div class="icon"><i class="fa-solid fa-code fa-2xl"></i></div>
-            </div>
+            </div></a>
         </div>
     </div>
 </div>
