@@ -11,8 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@700&family=Poppins:wght@500&family=Staatliches&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gifffer/1.5.0/gifffer.js" integrity="sha512-EeChiVh9P9OWHDKd3JziXsQcmMPzI3pSi/L9d6Dj7hXZcB7FD/4vTOjeKJ2UKNkr//85Cq3Zpdt30JF2icmSMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body>
+<body style="background: rgb(23,30,49);">
+
+    <div id="main-canvas">
 <header>
     <div class="nav-header">
 
@@ -20,7 +23,7 @@
             <div class="row justify-content-end nav-container">
                 <div class="name-logo">Leon Björklund</div>
                 <a href="index.html"><div class="nav-item">Home</div></a>
-                <div class="nav-item">Projects</div>
+                <a href="projects.html"><div class="nav-item">Projects</div></a>
                 <div class="nav-item">Experience</div>
                 <div class="nav-item">About Me</div>
                 <i class="fa-solid fa-bars fa-2xl"></i>
@@ -31,7 +34,53 @@
 
 </header>
 
-<div id="main-canvas"></div>
+<main>
+
+
+    <div class="page-name">Projects</div>
+
+    <div class="container">
+        <div class="d-flex justify-content-around projects-flexbox">
+            <a href="projects.html">
+                <div class="flex-column projects-column">
+                    <div class="project-title">Personal Website</div>
+                    <div class="project-text">Displaying projects, resume, contact etc</div>
+                    <div class="project-img"></div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-column projects-column">
+                    <div class="project-title">JavaScript Game</div>
+                    <div class="project-text">Interactive Game created in JS</div>
+                    <div class="project-gif">
+                        <img data-gifffer="gifs/textbased.gif" 
+                             data-gifffer-width="355.5" 
+                             data-gifffer-height="200">
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-column projects-column">
+                    <div class="project-title">CraigsList re-design</div>
+                    <div class="project-text">Redesigned CraigsList web-site</div>
+                    <div class="project-img"></div>
+                </div>
+            </a>
+            <a>
+                <div class="flex-column projects-column">
+                    <div class="project-title">CraigsList re-design</div>
+                    <div class="project-text">Redesigned CraigsList web-site</div>
+                    <div class="project-img"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+</main>
 
 </body>
+
+<script src="script.js"></script>
+
 </html>

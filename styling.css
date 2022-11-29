@@ -1,12 +1,13 @@
-body {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-}
-
 html {
     height: -webkit-fill-available;
+}
+
+body {
+    min-height: 100vh!important;
+    min-height: -webkit-fill-available;
+    font-family: 'Poppins', sans-serif!important;
+    background: rgb(23,30,49);
+background: linear-gradient(180deg, rgba(23,30,49,1) 40%, rgba(33,43,70,1) 60%, rgba(45,57,93,1) 80%, rgba(56,71,116,1) 100%);
 }
 
 * {
@@ -19,11 +20,7 @@ html {
     height: 100%;
     gap: 10px;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
-}
-
-.container {
-    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 4px #000;
 }
 
 .nav-header {
@@ -40,27 +37,21 @@ html {
 }
 
 .name-logo {
-    text-shadow: 2px 2px 4px #000;
     margin-right: auto;
     font-family: 'Kaushan Script', cursive;
     font-size: 2.2rem;
 }
 
-.margin-top-bot-4rem {
+.padding-top-bot-4rem {
     padding-top: 4rem;
-    margin-bottom: 4rem;
-
+    padding-bottom: 4rem;
+    padding-left: 0!important;
+    padding-right: 0!important;
 }
 
 .first {
     row-gap: 2rem;
     align-items: center;
-}
-
-#main-canvas {
-    background: rgb(23,30,49);
-    background: linear-gradient(180deg, rgba(23,30,49,1) 36%, rgba(47,60,99,1) 76%, rgba(56,71,116,1) 108%);
-    height: 100vh;
 }
 
 #name-logo {
@@ -70,10 +61,6 @@ html {
     margin-left: 3rem;
 }
 
-#main-canvas {
-    color: white;
-    height: 100vh;
-}
 
 #main-canvas > .d-flex {
     padding-top: 2rem;
@@ -88,26 +75,20 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
-img {
+.cv-pic {
     height: 275px;  /* width: 337px, height: 393px, ratio: 393/337 **/
-    width: calc(275*(337/393));
-    border-radius: 100px;
-    padding-right: 15px;
+    width: calc(275px*(337/393));
+    border-radius: 30px;
 }
 
 .divider {
     border-bottom: 5px solid orange;
 }
 
-.margin-top-12rem {
+.padding-top-6rem {
     height: 100%;
-    margin-top: 6rem;
+    padding-top: 6rem;
     padding-bottom: 6rem;
-}
-
-#project-page, #resume-page, #contact-page {
-    display: none;
-    height: 100vh;
 }
 
 a {
@@ -115,29 +96,92 @@ a {
     text-transform: none!important;
 }
 
-.icon {
+.icon-text {
+    font-size: 1.9rem;
+    padding-bottom: 15px;
+}
+
+.text-center {
     text-align: center;
 }
 
-.icon-text {
-    font-size: 1.5rem;
-}
-
-.gap {
-    gap: 20px;
-}
-
 .circle {
-    border: 5px solid;
-    border-radius: 999px;
-    padding: 20px;
+    background-color: #171E31;
+    border-radius: 15px;
+    border: solid 3px;
+    padding: 15px;
     cursor: pointer;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+}
+
+.fa-2xl {
+    font-size: 3em!important;
+    line-height: .5em!important;
+    padding-bottom: 15px;
 }
 
 .row > .fa-bars {
     display: none;
 }
 
+.page-name {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.projects-flexbox {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.project-gif {
+    height: 200px;  /* Aspect ratio 16:9 */
+    width: calc(200px*(16/9));
+    background-color: blue;
+    display: block;
+}
+
+.projects-column {
+    display: flex;
+    align-items: center;
+    border: solid 4px;
+    width: 28rem;
+    height: 18rem;
+    background-color: #384774;
+}
+
+.project-title {
+    font-size: 1.8rem;
+}
+
+.project-text {
+    width: calc(200px*(16/9));
+}
+
+.gif-control {
+    opacity: 0.8;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+}
+
+.gifffer-play-button {
+    background: #6c757d85!important;
+}
+
+.gifffer-play-button > div {
+    border-left: 14px solid rgb(0 0 0 / 80%)!important;
+}
+
+.project-gif > button {
+    outline: none!important;
+}
 
 @media (min-width: 726px) {
 
@@ -158,3 +202,34 @@ a {
 
   }
   
+  @media (min-width: 1200px) {
+
+    .padding-top-bot-4rem {
+        padding-left: 40px!important;
+        padding-right: 65px!important;
+    }
+
+    .col-10 {
+        padding: 0!important;
+    }
+
+  }
+
+  @media (max-width: 540px) {
+
+    .projects-column {
+        width: 20rem;
+        height: 15rem;
+    }
+
+    .project-gif {
+        height: 150px;
+        width: calc(150px*(16/9));
+    }
+
+    .project-gif > button {
+        height: 150px!important;
+        width: calc(150px*(16/9))!important;
+    }
+    
+  }
