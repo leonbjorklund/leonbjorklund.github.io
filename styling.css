@@ -395,10 +395,6 @@ a {
         max-width: 620px!important;
     }
 
-    .circle {
-        /* width: 180px; */
-    }
-
   }
 
   @media (min-width: 740px) {
