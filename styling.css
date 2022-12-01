@@ -38,6 +38,10 @@ body {
     height: 100%;
 }
 
+.margin-right-auto {
+    margin-right: auto;
+}
+
 .name-logo {
     margin-right: auto;
     font-family: 'Kaushan Script', cursive;
@@ -78,6 +82,7 @@ body {
 .me {
     font-size: 1.75rem;
     font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
 }
 
 .col-10 {
@@ -226,6 +231,20 @@ a {
 .project-gif > button {
     outline: none!important;
 }
+
+.pic-container {
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.resume-pic {
+    max-height: 700px;   /* Original size: 842x595px */
+    max-width: 100%;
+}
+
 
 @media (min-width: 726px) {
 
