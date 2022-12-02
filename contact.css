@@ -1,0 +1,82 @@
+.form-container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  background: #2a3350;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 4px white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.form-title {
+  font-size: 1.6rem;
+  align-self: center;
+  justify-self: center;
+  margin-top: 10px;
+  pointer-events: none;
+}
+
+form input, form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+  color: black;
+}
+
+form button {
+  padding: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #171e31;
+  width: 200px;
+  border: solid 2px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #101523;
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+}
+
+.linkedin-icon, .git-icon {
+  font-size: 6rem !important;
+  line-height: 1 !important;
+  vertical-align: 0 !important;
+  transition: 0.3s;
+}
+
+.linkedin-icon:hover, .git-icon:hover {
+  font-size: 6.2rem !important;
+}
+
+@media (min-width: 780px) {
+  .form-container {
+    max-width: 680px !important;
+  }
+}
